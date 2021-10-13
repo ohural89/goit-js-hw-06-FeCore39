@@ -15,30 +15,6 @@ const images = [
 
 const listOfImgsInGallery = document.querySelector(".gallery")
 
-const itemOfListOfImgs = document.createElement("li")
+const list = images.map(image => {return `<li><img src="${image.url}" alt="${image.alt}" width=320></li>`}).join(" ")
 
-
-const listOfUrl = images.map(image => image.url)
-console.log("listOfUrl", listOfUrl);
-
-const listOfAlt = images.map(image => image.alt)
-console.log("listOfAlt", listOfAlt);
-
-
-((url, alt) => {
-  const imgItem = document.createElement("img")
-  imgItem.width = 320
-
-  for (const image of images) {
-    imgItem.src = images.url
-    imgItem.alt = images.alt
-}
-})
-
-
-itemOfListOfImgs.appendChild(listOfItems)
-
-console.log(itemOfListOfImgs);
-
-
-listOfImgsInGallery.appendChild(itemOfListOfImgs)
+listOfImgsInGallery.insertAdjacentHTML("afterbegin", list);
