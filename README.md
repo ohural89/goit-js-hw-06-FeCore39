@@ -19,13 +19,13 @@ Elements: 3
 Category: Technologies
 Elements: 5
 
-Завдання 2
+<!-- Завдання 2
 Напиши скрипт, который для каждого элемента массива ingredients:
 
 + Создаст отдельный элемент <li>. Обзательно используй метод document.createElement().
 + Добавит название ингредиента как его текстовое содержимое.
 + Добавит элементу класс item.
-+ После чего вставит все <li> за одну операцию в список ul.ingredients.
++ После чего вставит все <li> за одну операцию в список ul.ingredients. -->
 
 Завдання 3
 Напиши скрипт для создания галереи изображений по массиву данных. В HTML есть список ul.gallery.
@@ -34,20 +34,6 @@ Elements: 5
 
 Все элементы галереи должны добавляться в DOM за одну операцию вставки.
 Добавь минимальное оформление галереи флексбоксами или гридами через CSS классы.
-const images = [
-  {
-    url: 'https://images.pexels.com/photos/140134/pexels-photo-140134.jpeg?dpr=2&h=750&w=1260',
-    alt: 'White and Black Long Fur Cat',
-  },
-  {
-    url: 'https://images.pexels.com/photos/213399/pexels-photo-213399.jpeg?dpr=2&h=750&w=1260',
-    alt: 'Orange and White Koi Fish Near Yellow Koi Fish',
-  },
-  {
-    url: 'https://images.pexels.com/photos/219943/pexels-photo-219943.jpeg?dpr=2&h=750&w=1260',
-    alt: 'Group of Horses Running',
-  },
-];
 
 Завдання 4
 Создай переменную counterValue в которой будет храниться текущее значение счетчика и инициализируй её значением 0.
