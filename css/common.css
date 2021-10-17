@@ -23,6 +23,7 @@ button {
   cursor: pointer;
 }
 
+/* Стилі для завдання 3 */
 .gallery {
   display: flex;
   justify-content: space-between;
