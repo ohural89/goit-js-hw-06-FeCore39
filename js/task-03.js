@@ -13,8 +13,19 @@ const images = [
   },
 ];
 
-const listOfImgsInGallery = document.querySelector(".gallery")
+// Спосіб 1
+// const listOfImgsInGallery = document.querySelector(".gallery")
 
-const list = images.map(image => {return `<li><img src="${image.url}" alt="${image.alt}" width=320></li>`}).join(" ")
+// const list = images.map(image => {return `<li><img src="${image.url}" alt="${image.alt}" width=320></li>`}).join(" ")
 
-listOfImgsInGallery.insertAdjacentHTML("afterbegin", list);
+// listOfImgsInGallery.insertAdjacentHTML("afterbegin", list);
+
+// Спосіб 2
+const gallery = document.querySelector('.gallery');
+
+const markup = images.reduce((acc, item) => {
+  acc + `<li><img src="${image.url}" alt="${image.alt}" width=320></li>`
+}, '');
+
+
+gallery.insertAdjacentHTML(`beforeend`, markup);
