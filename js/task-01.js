@@ -1,12 +1,16 @@
-const listOfItems = document.querySelectorAll(`#categories .item`)
+const listOfItems = document.querySelectorAll('#categories .item');
 
 console.log(`Number of categories: ${listOfItems.length}`);
 
-categories.forEach((item) =>
-console.log(
-    `Category: ${item.firstElementChild.textContent}
-    Element: ${lastElementChild.children.length}`)
+listOfItems.forEach((item) =>
+// console.log(
+//     `Category: ${item.firstElementChild.textContent}
+//     Element: ${item.lastElementChild.children.length}`)
+
+    console.dir(item)
 );
+
+
 
 // console.log("listOfItems", listOfItems);
 
