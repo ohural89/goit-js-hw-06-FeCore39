@@ -20,8 +20,7 @@ const itemList = document.querySelector('#ingredients')
 
 // console.log(listOfItems);
 
-const markup = (item) 
-=> {
+const markup = (item) => {
   const element = document.createElement(`li`);
   element.textContent = item;
 
